@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@use "myplugs" as core;
+
+$a: core.$clorox-palette;
+@include core.core();
+@include core.theme($a);
